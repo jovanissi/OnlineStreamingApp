@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "141679456923",
+    "firebase_url": "https://zogfirebaseproject-ad6b8.firebaseio.com",
+    "project_id": "zogfirebaseproject-ad6b8",
+    "storage_bucket": "zogfirebaseproject-ad6b8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:141679456923:android:192be0b2e5ab4182",
+        "android_client_info": {
+          "package_name": "com.kizalab.zog"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "141679456923-ef89f04pbf9ohqs6ngfa2qv0imrfqmep.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.kizalab.zog",
+            "certificate_hash": "1df441595b77ba15d326a30eae609d726c7376b0"
+          }
+        },
+        {
+          "client_id": "141679456923-9j2br4l8rs0d8tgm2tvv8bldb03thnqr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCn2aWKhMvc7BiupI0zVHZOS9BFXth7KU0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "141679456923-9j2br4l8rs0d8tgm2tvv8bldb03thnqr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

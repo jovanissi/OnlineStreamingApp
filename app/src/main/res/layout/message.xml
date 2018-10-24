@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:id="@+id/sentBubble"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_dark_rect"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="2.5dp"
+        android:layout_marginBottom="2.5dp"
+        android:visibility="gone">
+
+
+        <TextView
+            android:id="@+id/sentMessage"
+            tools:text="hello, hello! This is my message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxWidth="240dp"
+            android:padding="@dimen/dimen_5dp"
+            android:textColor="@color/white"
+            tools:ignore="HardcodedText"/>
+
+        <TextView
+            android:id="@+id/sentTime"
+            android:layout_below="@+id/sentMessage"
+            android:text="11:40"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:paddingLeft="@dimen/dimen_5dp"
+            android:paddingRight="@dimen/dimen_5dp"
+            android:paddingBottom="@dimen/dimen_5dp"
+            android:textSize="10sp"
+            tools:ignore="HardcodedText,SmallSp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/recBubble"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_rect"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/recNamePhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_5dp"
+            android:layout_marginRight="@dimen/dimen_5dp"
+            android:layout_marginTop="3dp"
+            tools:text="John Doe  +250788000000"
+            android:textColor="@color/white"
+            android:textStyle="italic|bold"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/recMessage"
+            android:text="hello, hello! This is my message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxWidth="240dp"
+            android:paddingLeft="@dimen/dimen_5dp"
+            android:paddingRight="@dimen/dimen_5dp"
+            android:paddingBottom="@dimen/dimen_5dp"
+            android:textColor="@color/white"
+            tools:ignore="HardcodedText"
+            android:layout_below="@+id/recNamePhone"/>
+
+        <TextView
+            android:id="@+id/recTime"
+            android:layout_below="@+id/recMessage"
+            android:text="11:40"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:paddingLeft="@dimen/dimen_5dp"
+            android:paddingRight="@dimen/dimen_5dp"
+            android:paddingBottom="@dimen/dimen_5dp"
+            android:textSize="10sp"
+            tools:ignore="HardcodedText,SmallSp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

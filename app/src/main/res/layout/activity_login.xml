@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.LoginActivity"
+    android:background="@color/primary">
+
+    <RelativeLayout
+        android:id="@+id/loginRelativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible">
+
+        <ImageView
+            android:id="@+id/keyIcon"
+            android:layout_above="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/ic_key_big"
+            android:layout_centerInParent="true"/>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_above="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Please enter your phone number"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"/>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Make sure your supports international SMS, and note that your carrier default charges may apply"
+            android:textColor="@color/white"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:layout_centerInParent="true"/>
+
+        <RelativeLayout
+            android:layout_below="@+id/textView2"
+            android:id="@+id/myRelativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="16dp"
+            android:background="@color/white"
+            android:layout_centerInParent="true">
+
+            <EditText
+                android:id="@+id/phoneNbr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:hint="+250 780 000 001"
+                android:inputType="phone"/>
+
+            <com.wang.avi.AVLoadingIndicatorView
+                android:id="@+id/avi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:indicatorName="BallPulseIndicator"
+                app:indicatorColor="@color/primary"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/phoneNbr"
+                android:visibility="invisible"
+                android:layout_marginBottom="16dp"/>
+
+            <Button
+                android:id="@+id/sendCodeBtn"
+                android:layout_below="@+id/phoneNbr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:background="@color/primary"
+                android:text="Send me code"
+                android:textColor="@color/white"
+                android:layout_marginBottom="32dp"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/codeRelativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_above="@+id/myRelativeLayout2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter Code here"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"/>
+
+        <RelativeLayout
+            android:id="@+id/myRelativeLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="16dp"
+            android:background="@color/white"
+            android:layout_centerInParent="true">
+
+            <EditText
+                android:id="@+id/sentCode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:textSize="24sp"
+                android:inputType="number"/>
+
+            <com.wang.avi.AVLoadingIndicatorView
+                android:id="@+id/avi2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:indicatorName="BallPulseIndicator"
+                app:indicatorColor="@color/primary"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/sentCode"
+                android:visibility="invisible"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="16dp"/>
+
+            <Button
+                android:id="@+id/enterBtn"
+                android:layout_below="@+id/sentCode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:background="@color/primary"
+                android:text="Enter"
+                android:textColor="@color/white"
+                android:layout_marginBottom="32dp"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/createProfileView"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:id="@+id/myRelativeLayout5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="16dp"
+            android:background="@color/white"
+            android:layout_centerInParent="true">
+
+            <!--<de.hdodenhof.circleimageview.CircleImageView-->
+                <!--android:id="@+id/icon"-->
+                <!--android:layout_width="150dp"-->
+                <!--android:layout_height="150dp"-->
+                <!--android:layout_centerHorizontal="true"-->
+                <!--android:layout_marginTop="20dp"-->
+                <!--android:src="@drawable/ic_account"-->
+                <!--android:clickable="true"-->
+                <!--android:focusable="true"/>-->
+
+            <EditText
+                android:id="@+id/phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:hint="Phone"
+                android:inputType="phone"
+                android:enabled="false"/>
+
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:hint="Enter your names"
+                android:layout_below="@+id/phone"/>
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:hint="Enter your E-mail (optional)"
+                android:layout_below="@+id/name"
+                android:inputType="textEmailAddress"/>
+
+            <com.wang.avi.AVLoadingIndicatorView
+                android:id="@+id/avi3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:indicatorName="BallPulseIndicator"
+                app:indicatorColor="@color/primary"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/email"
+                android:visibility="invisible"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="16dp"/>
+
+            <Button
+                android:id="@+id/okBtn"
+                android:layout_below="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:background="@color/primary"
+                android:text="create profile"
+                android:textColor="@color/white"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="32dp"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

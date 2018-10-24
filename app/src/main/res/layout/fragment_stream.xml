@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.StreamFragment"
+    android:background="@color/primary">
+
+    <!--<ImageView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:src="@mipmap/isango_logo"-->
+        <!--android:layout_centerInParent="true"-->
+        <!--android:layout_above="@+id/buttons"/>-->
+
+    <LinearLayout
+        android:id="@+id/buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="@dimen/dimen_16dp"
+        android:padding="@dimen/dimen_16dp">
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:id="@+id/watch_tv"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_live_tv"
+            android:background="@color/white"
+            android:padding="@dimen/dimen_10dp"
+            android:layout_margin="@dimen/dimen_5dp"/>
+
+        <!--<ImageButton-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_weight="1"-->
+            <!--android:id="@+id/play_radio"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--app:srcCompat="@drawable/ic_radio"-->
+            <!--android:background="@color/white"-->
+            <!--android:padding="@dimen/dimen_16dp"-->
+            <!--android:layout_margin="@dimen/dimen_5dp"/>-->
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">ZOG</string>
+
+    <string name="isango_tv_url">http://80.241.215.175:1935/isangostar/isangostar/playlist.m3u8</string>
+
+</resources>
